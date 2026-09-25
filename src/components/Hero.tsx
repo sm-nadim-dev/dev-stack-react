@@ -1,5 +1,5 @@
 import heroimg from "../assets/banner-stack.png";
-
+import "../index.css";
 function Hero() {
     return (
         <section className="container mx-auto flex flex-col items-center gap-10 px-2 py-6 lg:flex-row lg:py-6">
@@ -9,7 +9,7 @@ function Hero() {
                 <div className="space-y-6 text-center lg:text-left">
                     <h1 className="text-4xl font-extrabold text-[#0f172a] md:text-5xl lg:text-[60px]">
                         Build Your Ideal <br />
-                        <span className="bg-linear-to-r from-orange-500 via-pink-500 to-violet-600 bg-clip-text text-transparent">
+                        <span className="brand-gradient bg-clip-text text-transparent">
                             Development Stack
                         </span>
                     </h1>
@@ -20,7 +20,7 @@ function Hero() {
                         your next project.
                     </p>
                     <div className="mt-8 flex flex-row gap-4 sm:flex-row sm:justify-center lg:justify-start">
-                        <button className="rounded bg-linear-to-r from-orange-500 to-pink-500 px-3 py-3 font-semibold text-white">
+                        <button className="rounded bg-linear-to-r brand-gradient px-3 py-3 font-semibold text-white">
                             Explore Technologies
                         </button>
 
