@@ -34,7 +34,7 @@ function Navbar() {
                         </ul>
                     </div>
 
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-4">
                         <button className="cursor-pointer text-xs text-[#334155] md:text-sm">
                             Sign In
                         </button>
@@ -49,4 +49,4 @@ function Navbar() {
     );
 }
 
-export default Navbar;
+export default Navbar
