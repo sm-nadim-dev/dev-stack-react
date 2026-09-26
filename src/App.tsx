@@ -2,8 +2,9 @@ import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import type { Technology } from "./type/types"
 import { Suspense } from "react";
-import { LuLoader } from "react-icons/lu";
 import ExploreTech from "./components/ExploreTech";
+import Footer from "./components/Footer";
+import { BiLoaderCircle } from "react-icons/bi";
 
 const technologyPromis = async (): Promise<Technology[]> => {
   const res = await fetch('/data.json');
@@ -18,9 +19,12 @@ function App() {
       <header>
         <Navbar />
         <Hero />
-        <Suspense fallback={<LuLoader />}>
+        <Suspense fallback={<div className="flex justify-center font-">
+          <BiLoaderCircle />
+        </div>}>
           <ExploreTech prop={technologyPromis()} />
         </Suspense>
+        < Footer/>
       </header>
     </>
   )
