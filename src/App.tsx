@@ -24,7 +24,7 @@ function App() {
         </div>}>
           <ExploreTech prop={technologyPromis()} />
         </Suspense>
-        < Footer/>
+        < Footer />
       </header>
     </>
   )

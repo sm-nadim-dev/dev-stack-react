@@ -14,6 +14,13 @@ export default function ExploreTech({ prop }: TechnologyProp) {
 
     // Add technology
     const addToStack = (technology: Technology) => {
+        const isAlreadyInStack = stack.some((item) => item.id === technology.id);
+
+        if (isAlreadyInStack) {
+            toast.warn(`${technology.name} is already in your stack!`);
+            return;
+        }
+
         setStack([...stack, technology]);
         toast.success(`${technology.name} added to your stack!`);
     };
