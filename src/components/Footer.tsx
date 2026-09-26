@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-white border-t border-gray-100 py-12 mt-20">
       <div className="container mx-auto px-4">
         
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-14 mb-12">
         
           <div className="space-y-4">
             <div><img src={logo} alt="" /></div>
@@ -15,11 +15,9 @@ export default function Footer() {
             </p>
             
             <div className="flex items-center gap-3 text-sm text-gray-600">
-              <a href="#" className="hover:text-gray-900">GitHub</a>
-              <span>•</span>
-              <a href="#" className="hover:text-gray-900">Twitter</a>
-              <span>•</span>
-              <a href="#" className="hover:text-gray-900">LinkedIn</a>
+              <a href="#" className="hover:text-gray-900 font-bold">GitHub</a>
+              <a href="#" className="hover:text-gray-900 font-bold">Twitter</a>
+              <a href="#" className="hover:text-gray-900 font-bold">LinkedIn</a>
             </div>
           </div>
           <div>
