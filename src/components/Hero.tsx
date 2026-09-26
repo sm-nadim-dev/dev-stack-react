@@ -20,11 +20,11 @@ function Hero() {
                         your next project.
                     </p>
                     <div className="mt-8 flex flex-row gap-4 sm:flex-row sm:justify-center lg:justify-start">
-                        <button className="rounded bg-linear-to-r brand-gradient px-3 py-3 font-semibold text-white">
+                        <button className="cursor-pointer rounded bg-linear-to-r brand-gradient px-3 py-3 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                             Explore Technologies
                         </button>
 
-                        <button className="rounded border border-gray-300 px-12 py-3 font-semibold text-[#334155]">
+                        <button className="cursor-pointer rounded border border-gray-300 px-12 py-3 font-semibold text-[#334155] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
                             Learn More
                         </button>
                     </div>
